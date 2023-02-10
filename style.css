@@ -63,13 +63,14 @@ form {
   line-height: 34px;
   color: #535971;
   padding-bottom: 8px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   border-bottom: 1px solid #E6E6F0;
   width: 100%;
 }
 
 legend.personal-info {
   padding-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .input-wrapper {
@@ -92,6 +93,7 @@ input {
   padding: 10px;
   margin-bottom: 16px;
   height: 56px;
+  width: 100%;
 }
 
 .user-name {
@@ -109,9 +111,75 @@ span {
   line-height: 20px;
   color: #C1BCCC;
   margin-left: 7px;
+  font-weight: 400;
 }
 
 span:hover {
   color: #85818d;
 }
 
+fieldset.scheduling {
+  margin-bottom: 0;
+}
+
+.scheduling h2 {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+  margin-bottom: 11px;
+} 
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+
+}
+
+.col-3 > div:nth-child(1) {
+  width: 50%;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3){
+  width: 25%;
+
+}
+
+footer {
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+  width: 750px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 366px;
+}
+
+footer button {
+  border: 0;
+  width: 608px;
+  height: 55.65px;
+
+  background: #FF5374;
+  border-radius: 20px;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+footer button:hover {
+  background: #f51c47;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 2px solid #ff1010;
+}
