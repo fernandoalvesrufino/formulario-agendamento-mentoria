@@ -21,27 +21,39 @@
 
     <form id="form">
       <fieldset class="wrapper">
-        <legend>Informações pessoais</legend>
+        <legend class="personal-info">Informações pessoais</legend>
 
-        <label for="">Nome</label>
-        <input type="text" name="" id="">
+        <div class="user-name">
+          <div class="input-wrapper" id="input-name">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+  
+          <div class="input-wrapper" id="input-last-name">
+            <label for="last-name">Sobrenome</label>
+            <input type="text" name="last-name" id="last-name" required>
+          </div>
+        </div>
+          
+        <div class="input-wrapper">
+          <label for="email">Email <span>(digite um email válido)</span></label>
+          <input type="email" name="email" id="email" required>
+        </div>
 
-        <label for="">Sobrenome</label>
-        <input type="text" name="" id="">
-
-        <label for="">Email <span>(digite um email válido)</span></label>
-        <input type="text" name="" id="">
-
-        <label for="">Senha <span>(mínimo de 6 caracteres)</span></label>
-        <input type="text" name="" id="">
+        <div class="input-wrapper">
+          <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" name="password" id="password" minlength="6" required>
+        </div>
 
       </fieldset>
       
       <fieldset class="wrapper">
         <legend>Informações do mentor</legend>
         
-        <label for="">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-        <input type="text" name="" id="">
+        <div class="input-wrapper">
+          <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+          <input type="text" name="mentor" id="mentor" required>
+        </div>
   
       </fieldset>
       
@@ -50,27 +62,38 @@
         <legend>Seus horários disponíveis</legend>
         
         <h2>Primeira mentoria</h2>
-        <label for="">Data <span>(DD/MM/AAAA)</span></label>
-        <input type="text" name="" id="">
-      
-        <label for="">Das</label>
-        <input type="text" name="" id="">
-      
-        <label for="">Até</label>
-        <input type="text" name="" id="">
+        <div class="input-wrapper">
+          <label for="first-date">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="date" name="first-date" id="first-date" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="first-start-time">Das</label>
+          <input type="time" name="first-start-time" id="first-start-time" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="first-end-time">Até</label>
+          <input type="time" name="first-end-time" id="first-end-time" required>
+        </div>
         
         <h2>Segunda mentoria</h2>
-        <label for="">Data <span>(DD/MM/AAAA)</span></label>
-        <input type="text" name="" id="">
-      
-        <label for="">Das</label>
-        <input type="text" name="" id="">
-      
-        <label for="">Até</label>
-        <input type="text" name="" id="">
+        <div class="input-wrapper">
+          <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="text" name="second-date" id="second-date" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="second-start-time">Das</label>
+          <input type="text" name="second-start-time" id="second-start-time" required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="second-end-time">Até</label>
+          <input type="text" name="second-end-time" id="second-end-time" required>
+        </div>
       
       </fieldset>
-
 
     </form>
     
